@@ -106,7 +106,7 @@ class ValueDisplay extends React.Component
 			date: @formatDate, time: @formatTime, instant: @formatInstant, dateTime: @formatDateTime
 			integer: @formatInt, unsignedInt: @formatInt, positiveInt: @formatInt, decimal: @formatDecimal
 			boolean: @formatBoolean, string: @formatString, uri: @formatString, oid: @formatString, code: @formatString
-			id: @formatString, markdown: @formatString, xhtml: @formatXhtml, code: @formatCode
+			id: @formatString, markdown: @formatString, xhtml: @formatXhtml, code: @formatCode, "http://hl7.org/fhirpath/System.String": @formatString
 
 		formatter = formatters[@props.node.fhirType || "string"]
 		value = @props.node.value
